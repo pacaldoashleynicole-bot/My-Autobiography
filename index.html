@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An autobiography of Ashly Nicole N. Pacaldo — a reflection of faith, perseverance, and growth.">
+  <link rel="icon" type="image/png" href="pictures/Ashly.png">
+  <title>My Autobiography - Ashly Nicole N. Pacaldo</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(180deg, #eef4ff 0%, #ffffff 100%);
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a3c8d, #345ac9);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      position: relative;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 4px solid #fff;
+      display: block;
+      margin: 0 auto 1rem auto;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      color: #1a3c8d;
+      background: #eef4ff;
+      border-left: 5px solid #1a3c8d;
+      padding: 0.4rem 10px;
+      border-radius: 8px;
+    }
+
+    nav {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a3c8d;
+      background-color: #e7ebf6;
+      padding: 8px 16px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #1a3c8d;
+      color: white;
+      box-shadow: 0 2px 6px rgba(26, 60, 141, 0.3);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: #fdfdfd;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1.5s ease, transform 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+      text-indent: 2em;
+      position: relative;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section + section::before {
+      content: "";
+      display: block;
+      height: 2px;
+      margin: 2rem auto;
+      width: 60%;
+      background: linear-gradient(to right, transparent, #c7d4f9, transparent);
+    }
+
+    footer {
+      background-color: #1a3c8d;
+      color: #dfe6ff;
+      text-align: center;
+      padding: 1.5rem;
+      font-style: italic;
+    }
+
+    ul {
+      text-indent: 0;
+      margin-left: 2.5em;
+    }
+
+    blockquote {
+      border-left: 4px solid #345ac9;
+      padding-left: 1em;
+      font-style: italic;
+      color: #3a3a3a;
+      margin-left: 1em;
+    }
+
+    .highlight {
+      color: #1a3c8d;
+      font-weight: bold;
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #1a3c8d;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease, transform 0.3s ease;
+      z-index: 999;
+    }
+
+    #backToTop.visible {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0);
+    }
+
+    #backToTop:hover {
+      background-color: #345ac9;
+      transform: translateY(-3px);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img id="profile-photo" src="pictures/Ashly.png" alt="Ashly Nicole N. Pacaldo" title="Ashly Nicole N. Pacaldo" loading="lazy" />
+    <h1>My Autobiography</h1>
+    <p><strong>Ashly Nicole N. Pacaldo</strong><br>BindTech — ComTech 1D, Lapu-Lapu City College</p>
+  </header>
+
+  <nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#earlylife">Early Life</a>
+    <a href="#education">Education</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#values">Values</a>
+    <a href="#goals">Goals</a>
+    <a href="#acknowledgment">Acknowledgment</a>
+  </nav>
+
+  <section id="introduction">
+    <h2>I. Introduction</h2>
+    <p>This autobiography serves as a reflection of my personal journey, highlighting the experiences, values, and life lessons that have shaped me into who I am today. It provides an overview of my life—from my early childhood and family background to my education and aspirations for the future. Through this writing, I aim to share the story of my growth, determination, and continuous pursuit of self-improvement.</p>
+    <blockquote>“Educating the mind without educating the heart is no education at all.” — Aristotle</blockquote>
+  </section>
+
+  <section id="earlylife">
+    <h2>II. Early Life and Family Background</h2>
+    <p>I am Ashly Nicole Ngujo Pacaldo, born in Gun-ob, Lapu-Lapu City, Cebu, Philippines, on February 14, 2007. My mother's name is Zoraida Ngujo Pacaldo, and my father's name is Edwin Cabalhug Pacaldo. My mother is a housewife who takes care of both us and our home, while my father works diligently using his skills in carpentry, masonry, and construction to provide for our daily needs.</p>
+    <p>I have four siblings who bring joy and liveliness to our home:</p>
+      <ul>
+        <li><strong>John Dave N. Pacaldo</strong> — the eldest, born July 7, 2001; he graduated with a Bachelor of Science in Hospitality Management from Cordova Public College (Batch 2024) and is currently working at Belmont Hotel, Mactan.</li>
+        <li><strong>John Edric N. Pacaldo</strong> — born September 29, 2004; he is playful and determined and is currently a 2nd-year BS Criminology student at Rizwoods Colleges.</li>
+        <li><strong>Kieshiera Niña N. Pacaldo</strong> — born January 16, 2011; she is a Grade 9 student at Babag National High School and is cheerful and playful.</li>
+        <li><strong>John Gabriell N. Pacaldo</strong> — born December 27, 2013; he is a Grade 6 pupil at Tiangue Elementary School and is full of energy and curiosity.</li>
+      </ul>
+    <p>We may argue and tease one another, but our bond always brings us back together with laughter and love. I grew up in a simple but nurturing family that values respect, faith, and hard work. My parents’ teachings of humility and perseverance continue to guide me in all aspects of my life.</p>
+  </section>
+
+  <section id="education">
+    <h2>III. Educational Journey</h2>
+
+    <h3>A. Elementary</h3>
+    <p>I began my education at Tiangue Elementary School, where I discovered my curiosity and passion for learning. I graduated with Academic Excellence Awards and recognitions in English, Filipino, and Science.</p>
+
+    <h3>B. High School</h3>
+    <p>During my junior high years at Babag National High School, I became a proud member of the Girl Scouts of the Philippines. The pandemic challenged us with online and modular learning, but it also taught me discipline and time management. In 2023, I graduated with Academic Excellence and Service Awards, proud of my perseverance through the new normal.</p>
+
+    <h3>C. College</h3>
+    <p>For senior high, I studied at Proverbs Ville Academy Foundation, specializing in Computer System Servicing. My time there strengthened my technical and leadership skills as I served as the Supreme Secondary Government Protocol Officer. Currently, I am pursuing a Bachelor of Industrial Technology — Computer Technology at Lapu-Lapu City College, where I continue to grow in both knowledge and character.</p>
+  </section>
+
+  <section id="hobbies">
+    <h2>IV. Personal Interests and Hobbies</h2>
+    <p>I enjoy reading the Bible, exploring manhwas, listening to music, spending time with loved ones, and learning new skills related to my field. These hobbies keep me grounded and help me maintain balance between study, faith, and family.</p>
+  </section>
+
+  <section id="experiences">
+    <h2>V. Significant Life Experiences</h2>
+    <p>Life has tested my strength and patience through various challenges, but I’ve learned that <span class="highlight">NO</span> simply means “Next Opportunity,” and <span class="highlight">FAIL</span> stands for “First Attempt In Learning.” I now see every setback as preparation for my next opportunity.</p>
+    <p>During the COVID-19 pandemic, I experienced the shift from traditional classes to online learning, which was both challenging and eye-opening. Later, when Bagyong Odette struck our city, I witnessed the importance of resilience, unity, and faith. As a student leader and Protocol Officer, I learned how to guide and motivate others while maintaining humility and discipline.</p>
+    <p>These experiences taught me that faith, courage, and perseverance always lead to growth.</p>
+  </section>
+
+  <section id="values">
+    <h2>VI. Values and Beliefs</h2>
+    <p>I strongly believe in the importance of truth, respect, valiance, and perseverance. These values serve as my foundation when dealing with people and situations. I believe that success is not only measured by achievements but also by the integrity and compassion we show others. My faith and family continue to guide me as I make decisions and face life’s realities.</p>
+  </section>
+
+  <section id="goals">
+    <h2>VII. Goals and Aspirations</h2>
+    <p>My short-term goal is to successfully finish my degree in Industrial Technology while developing the skills needed for my chosen field. In the long run, I aspire to become a professional who contributes to technological advancement and community growth. I also aim to be someone my family can be proud of—an individual who works hard, stays humble, and continues to learn.</p>
+  </section>
+
+  <section id="acknowledgment">
+    <h2>VIII. Acknowledgment</h2>
+    <p>I would like to express my heartfelt gratitude to my family — Mama Pislat, Papa Budlat, Kuya Boker, Kuya Dave, Gabriell, Niña, Andat, and Eya — for their continuous love and support; to my teachers and mentor Sir Kai for their guidance and patience; and to my friends for their encouragement throughout my journey. Their presence and influence have been instrumental in shaping who I am today.</p>
+  </section>
+
+  <footer>
+    “When you arise, nations tremble; at your uproar, peoples flee.” — Isaiah 33:3
+  </footer>
+
+  <button id="backToTop" title="Back to Top">↑</button>
+
+  <script>
+    // Back to Top button logic
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add("visible");
+      } else {
+        backToTop.classList.remove("visible");
+      }
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Image fallback loader
+    (function () {
+      const img = document.getElementById('profile-photo');
+      const candidates = [
+        './pictures/Ashly.png',
+        './pictures/Ashly.PNG',
+        './pictures/2x2_Ashly.png',
+        './pictures/2x2_Ashly.PNG',
+        './images/Ashly.png',
+        './images/2x2_Ashly.png',
+        './Ashly.png',
+        './2x2_Ashly.png',
+        '../Pictures/Ashly.png',
+        'file:///C:/Users/caote/Pictures/Ashly.png'
+      ];
+
+      let idx = 0;
+      function tryNext() {
+        if (!img) return;
+        if (idx >= candidates.length) {
+          img.outerHTML = `<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="border-radius:50%;display:block;margin:0 auto 1rem auto;background:#eef4ff;border:4px solid #fff"><text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#1a3c8d">No Image</text></svg>`;
+          return;
+        }
+        img.src = candidates[idx++];
+      }
+
+      if (img) {
+        img.addEventListener('error', tryNext);
+        // If the current src is empty or clearly not usable, start attempts.
+        if (!img.getAttribute('src') || img.getAttribute('src').trim() === '') {
+          tryNext();
+        }
+      }
+    })();
+
+    // Section fade-in animation with cascading delay
+    (function () {
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = Array.prototype.indexOf.call(sections, entry.target);
+            setTimeout(() => entry.target.classList.add("visible"), index * 100);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+
+      sections.forEach(section => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>
